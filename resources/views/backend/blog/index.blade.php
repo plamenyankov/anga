@@ -20,7 +20,7 @@
             <tr class="{{$post->published_highlight}}">
                 <td><a href="{{route('backend.blog.edit',$post->id)}}">{{$post->title}}</a></td>
                 <td>{{$post->slug}}</td>
-                <td>{{$post->author->name}}</td>
+                <td>{{$post->author == null?'':$post->author->name}}</td>
                 <td>{{$post->published_date}}</td>
                 <td><a href="{{route('backend.blog.edit',$post->id)}}">
                         <span class="glyphicon glyphicon-edit"></span>

@@ -10,7 +10,7 @@
 <body>
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
-        <div class="nav-bar-header"><a href="/" class="navbar-brand">MMA</a></div>
+        <div class="nav-bar-header"><a href="/" class="navbar-brand">Angagroup</a></div>
         <ul class="nav navbar-nav">
             <li><a href="{{route('backend.dashboard')}}">Dashboard</a></li>
             <li><a href="{{route('backend.users.index')}}">Users</a></li>

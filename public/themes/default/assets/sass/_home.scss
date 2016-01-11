@@ -8,4 +8,14 @@
   border: 1px solid #e74c46;
   border-radius: 5px 0px 0px 5px;
   z-index: 1000;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.intro-arrivals {
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 25px;
 }
