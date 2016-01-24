@@ -1,6 +1,6 @@
 @extends('layouts.auth')
 @section('title','Login')
-@section('heading','Моля впишете се asdas сдфсдфсд!')
+@section('heading','Please sign in!')
 
 @section('content')
 

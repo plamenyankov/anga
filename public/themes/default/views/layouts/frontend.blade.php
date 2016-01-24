@@ -36,6 +36,7 @@
         .car-title {
             font-size: 22px;
             font-weight: bold;
+            font-family: Helvetica, Arial, sans-serif;
         }
 
         .nopadding {
@@ -73,8 +74,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Anga Group ltd <br/>
-                <span class="hidden-md" style="font-size: 16px !important;">Business to business sale of Ex-lease and New Vehicles from Central and Eastern Europe</span></a>
+            <a class="navbar-brand page-scroll" href="#page-top">Anga Group ltd
+
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -99,31 +100,26 @@
 
         <div class="col-md-8 col-lg-8">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Anga Group!</div>
-                <div class="intro-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, beatae
-                    consequatur ipsa mollitia placeat quibusdam voluptatem. Consequatur corporis dolore eaque eum iure
-                    nisi ullam. Amet iste iusto magni nisi quas quos sed tempore voluptatum! Ad amet animi architecto
-                    blanditiis commodi cumque deserunt dignissimos doloribus eos ex excepturi iure magnam maiores nemo
-                    nesciunt nostrum perferendis perspiciatis quaerat quibusdam, ratione repellendus repudiandae
-                    sapiente sed sint unde! Accusamus alias amet aspernatur at corporis deserunt dicta eius error eum
-                    ipsam iusto maxime natus non nostrum nulla placeat quam qui quis quo quos reiciendis rem repudiandae
-                    rerum suscipit unde vel, voluptas voluptatem? Illum magni, similique.
+                <div class="intro-lead-in">{{$header->title}}</div>
+                <div class="intro-heading">{!! $header->bodyHtml !!}
                 </div>
-                <a href="#services" class="page-scroll btn btn-lg">Offers</a>
+                <a href="#offers" class="page-scroll btn btn-lg">Offers</a>
             </div>
         </div>
 
         <div class="col-lg-4">
+
             <div id="myScrollspy" class="hidden-sm">
                 <div class="intro-arrivals">New Arrivals</div>
-                <ul class="list-group">
-                    <li class="list-group-item">Renalt Clio 2016-01-17 clio/center 100 cars</li>
-                    <li class="list-group-item">Renalt Clio 2016-01-17 clio/center 100 cars</li>
-                    <li class="list-group-item">Renalt Clio 2016-01-17 clio/center 100 cars</li>
-                    <li class="list-group-item">Renalt Clio 2016-01-17 clio/center 100 cars</li>
-                    <li class="list-group-item">Renalt Clio 2016-01-17 clio/center 100 cars</li>
-
-                </ul>
+                @if(count($offers))
+                    <ul class="list-group">
+                        @foreach($offers as $offer)
+                            <li class="list-group-item"><a href="#offers">{{$offer->title}}</a></li>
+                        @endforeach
+                    </ul>
+                @else
+                    <div class="text-danger">No offers</div>
+                @endif
             </div>
         </div>
     </div>
@@ -136,21 +132,9 @@
             <div class="col-md-8 text-center">
                 <h2 class="section-heading">About</h2>
 
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading">{{$about->title}}</h3>
 
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
-                    consequuntur cum dolore dolorem eligendi exercitationem, laboriosam magnam omnis quaerat quia
-                    ratione repellat, repudiandae suscipit temporibus. Assumenda commodi consequatur corporis ipsa,
-                    suscipit ullam voluptatem voluptates. Adipisci aliquid asperiores, assumenda blanditiis dignissimos
-                    esse excepturi fugit illo inventore iste officia possimus quae quia ratione reiciendis repellat
-                    rerum ullam veritatis! Aperiam aspernatur debitis magni, maiores soluta suscipit vel vitae. Animi
-                    eaque esse eveniet fugiat illo libero quidem sed totam voluptatem. Libero repellat, totam!
-                    Accusantium ad assumenda, culpa eveniet fugiat incidunt ipsa nam nemo neque obcaecati, omnis porro,
-                    quas quos similique soluta! Animi at doloremque eius est eum minima quaerat rem repellat? A aliquid
-                    at earum eius, eum exercitationem expedita fuga ipsam modi molestiae mollitia necessitatibus, neque
-                    obcaecati officia omnis quos recusandae suscipit tempora, vitae voluptatum. Asperiores beatae
-                    consectetur consequatur, facere fuga in inventore ipsam laborum obcaecati qui quibusdam rem,
-                    repellendus sunt ut, voluptates.</p>
+                <p class="">{!! $about->bodyHtml !!}</p>
             </div>
         </div>
 
@@ -165,7 +149,7 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Contact Us</h2>
 
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <h3 class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Fugiat, voluptatem!</h3>
             </div>
         </div>
@@ -174,147 +158,151 @@
             <div class="col-md-6">
                 <div id="map"></div>
                 <div>
-                    <h3 class="text-danger">Sofia, Mladost 4</h3>
-                    <h4 class="text-danger">sales@anga.bg</h4>
-                    <h4 class="text-danger">0888 888 888</h4>
+                    <h3 class="">Sofia, Mladost 4</h3>
+                    <h4 class="">sales@anga.bg</h4>
+                    <h4 class="">0888 888 888</h4>
                 </div>
-                <div class="row " style="margin: 50px 0px 0px 0px;">
-                    <div class="col-md-12 nopadding"><h5 class=" text-danger">You can subscribe to our mailing list in
+                <div class="row " style="margin: 34px 0px 0px 0px;">
+
+                    <div class="col-md-12 nopadding">
+                        <div class="">You can subscribe to our mailing list in
                             order to
                             recieve
-                            our latest offers by pressing the button bellow or by connecting with your social network
-                            profile.</h5></div>
-                    <div class="col-sm-6 nopadding">
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email *" id="email"
-                                   required data-validation-required-message="Please enter your email address.">
+                            our latest offers.
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                </div>
+                <div class="row " style="margin: 31px 0px 0px 0px;">
+                    <div class="col-sm-12 nopadding">
 
-                        <button type="submit" class="btn btn-lg">subscribe</button>
+                        <form id="emailSub" name="emailSub" novalidate>
+                            <meta name="_token" content="{!! csrf_token() !!}"/>
+                            <div class="col-sm-12 nopadding">
+                                <div id="successSub"></div>
+
+                            </div>
+                            <div class="col-sm-6 nopadding">
+
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="subsmail"
+                                           required
+                                           data-validation-required-message="Please enter your email address.">
+
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-6">
+
+                                <button type="submit" class="btn btn-lg">Subscribe</button>
+                            </div>
+
+                        </form>
+
+</div>
+
+                    {{--<div class="col-sm-6 nopadding">--}}
+                        {{--<div class="form-group">--}}
+                        {{--<input type="email" class="form-control" placeholder="Your Email *" id="subscribe"--}}
+                        {{--required data-validation-required-message="Please enter your email address.">--}}
+                        {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-sm-6">--}}
+
+                        {{--<button type="submit" class="btn btn-lg subscribe-btn">subscribe</button>--}}
+                        {{--</div>--}}
+
+
+                        <div class="clearfix"></div>
+
+
                     </div>
-                    <div class="clearfix"></div>
-                    <div class="col-sm-6 nopadding">
-                        <div class="text-danger">Subscribe with social network</div>
-                    </div>
-                    <div class="col-sm-6" style="margin-bottom: 30px;">
-
-                        <button type="submit" class="btn btn-lg">Facebook</button>
-                        <!-- Button trigger modal -->
-
-
-                    </div>
-                    <div class="clearfix"></div>
-
 
                 </div>
+                <div class="col-md-6">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <meta name="_token" content="{!! csrf_token() !!}"/>
+                        <div class="row">
 
-            </div>
-            <div class="col-md-6">
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required
+                                           data-validation-required-message="Please enter your name.">
 
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required
-                                       data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email"
+                                           required
+                                           data-validation-required-message="Please enter your email address.">
 
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email *" id="email" required
-                                       data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone"
+                                           required
+                                           data-validation-required-message="Please enter your phone number.">
 
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required
-                                       data-validation-required-message="Please enter your phone number.">
-
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            {{--</div>--}}
-                            {{--<div class="col-md-6">--}}
-                            <div class="form-group">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                {{--</div>--}}
+                                {{--<div class="col-md-6">--}}
+                                <div class="form-group">
                                 <textarea class="form-control" placeholder="Your Message *" id="message" required
                                           data-validation-required-message="Please enter a message."></textarea>
 
-                                <p class="help-block text-danger"></p>
+                                    <p class="help-block text-danger"></p>
+                                    <label for="subscribe" style="font-weight: normal !important;"><input
+                                                name="subscribe"
+                                                id="subscribe2"
+                                                type="checkbox"/>
+                                        Subscribe for news letters</label>
+
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-6"></div>
+                            <div class="col-md-12">
+
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-lg">Send Message</button>
+
                             </div>
                         </div>
-                        <div class="clearfix"></div>
-                        <div class="col-md-6"></div>
-                        <div class="col-md-12">
-                            <div id="success"></div>
-                            <button type="submit" class="btn btn-lg">Send Message</button>
-
-
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
 
-    </div>
+        </div>
 </section>
 <section id="offers" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center"><h2 class="section-heading">OFFERS</h2></div>
             <div class="col-sm-12">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <div class="car-title">Renalt 2016-17-01</div>
-                        <div style="min-height: 30px;">
-                            <div class="pull-left">Clio | Megan | Laguna | etc 100 cars</div>
-                            <button class="btn btn-xl pull-right">Download</button>
-                        </div>
-                    </li><li class="list-group-item">
-                        <div class="car-title">Renalt 2016-17-01</div>
-                        <div style="min-height: 30px;">
-                            <div class="pull-left">Clio | Megan | Laguna | etc 100 cars</div>
-                            <button class="btn btn-xl pull-right">Download</button>
-                        </div>
-                    </li><li class="list-group-item">
-                        <div class="car-title">Renalt 2016-17-01</div>
-                        <div style="min-height: 30px;">
-                            <div class="pull-left">Clio | Megan | Laguna | etc 100 cars</div>
-                            <button class="btn btn-xl pull-right">Download</button>
-                        </div>
-                    </li><li class="list-group-item">
-                        <div class="car-title">Renalt 2016-17-01</div>
-                        <div style="min-height: 30px;">
-                            <div class="pull-left">Clio | Megan | Laguna | etc 100 cars</div>
-                            <button class="btn btn-xl pull-right">Download</button>
-                        </div>
-                    </li><li class="list-group-item">
-                        <div class="car-title">Renalt 2016-17-01</div>
-                        <div style="min-height: 30px;">
-                            <div class="pull-left">Clio | Megan | Laguna | etc 100 cars</div>
-                            <button class="btn btn-xl pull-right">Download</button>
-                        </div>
-                    </li><li class="list-group-item">
-                        <div class="car-title">Renalt 2016-17-01</div>
-                        <div style="min-height: 30px;">
-                            <div class="pull-left">Clio | Megan | Laguna | etc 100 cars</div>
-                            <button class="btn btn-xl pull-right">Download</button>
-                        </div>
-                    </li><li class="list-group-item">
-                        <div class="car-title">Renalt 2016-17-01</div>
-                        <div style="min-height: 30px;">
-                            <div class="pull-left">Clio | Megan | Laguna | etc 100 cars</div>
-                            <button class="btn btn-xl pull-right">Download</button>
-                        </div>
-                    </li><li class="list-group-item">
-                        <div class="car-title">Renalt 2016-17-01</div>
-                        <div style="min-height: 30px;">
-                            <div class="pull-left">Clio | Megan | Laguna | etc 100 cars</div>
-                            <button class="btn btn-xl pull-right">Download</button>
-                        </div>
-                    </li>
 
-                </ul>
+                @if(count($offers))
+                    <ul class="list-group">
+                        @foreach($offers as $offer)
+                            <li class="list-group-item">
+                                <div class="car-title">{{$offer->title}}</div>
+                                <div style="min-height: 30px;">
+                                    <div class="pull-left">{{$offer->body}}</div>
+                                    @if($offer->filename)
+                                        <a class="btn btn-default pull-right" href="/offers/{{$offer->filename}}"
+                                           download="{{$offer->filename}}"
+                                           style="margin-top: -15px;">Download</a>
+                                    @endif
+                                </div>
+                            </li>
+                        @endforeach
+                    </ul>
+                @else
+                    <div class="text-danger">No offers</div>
+                @endif
+
             </div>
         </div>
     </div>
@@ -354,10 +342,6 @@
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
                     <li><a href="#"><i class="fa fa-linkedin"></i></a>
                     </li>
                 </ul>
@@ -410,6 +394,7 @@
 <!-- Contact Form JavaScript -->
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/contact_me.js"></script>
+<script src="js/subscribe.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="js/agency.js"></script>
@@ -417,9 +402,12 @@
 </body>
 <script>
     $(function () {
-
+        if ($('#contact').offset().top >= $(window).scrollTop() + 200 && $(window).width() >= 768) {
+            $('#myScrollspy').show();
+        } else {
+            $('#myScrollspy').hide();
+        }
         $(window).on('scroll', function () {
-            console.log($(window).width());
             if ($('#contact').offset().top >= $(window).scrollTop() + 200 && $(window).width() >= 768) {
                 $('#myScrollspy').fadeIn(300);
             } else {
@@ -431,5 +419,10 @@
         e.preventDefault();
         $('#myInput').focus()
     })
+    $('.subscribe-btn').on('click', function (e) {
+        e.preventDefault();
+        var email = $('#subscribe').val();
+        console.log(email);
+    });
 </script>
 </html>

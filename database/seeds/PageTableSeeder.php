@@ -14,51 +14,41 @@ class PageTableSeeder extends Seeder
         DB::table('pages')->truncate();
         DB::table('pages')->insert([
             [
-            'title'=>'About',
-            'uri'=>'about',
+            'title'=>'Home',
+            'uri'=>'#home',
             'content'=>'This is about page',
-                'parent_id'=>null,
-                'lft'=>3,
-                'rgt'=>8,
-                'depth'=>0
-        ],
-            [
-                'title'=>'Contact',
-                'uri'=>'contact',
-                'content'=>'This is contact page',
-                'parent_id'=>1,
-                'lft'=>4,
-                'rgt'=>5,
-                'depth'=>1
-            ],
-            [
-                'title'=>'FAQ',
-                'uri'=>'faq',
-                'content'=>'This is about page',
-                'parent_id'=>1,
-                'lft'=>6,
-                'rgt'=>7,
-                'depth'=>1
-            ],
-            [
-                'title'=>'Media',
-                'uri'=>'media',
-                'content'=>'This is about page',
                 'parent_id'=>null,
                 'lft'=>1,
                 'rgt'=>2,
                 'depth'=>0
+        ],
+            [
+                'title'=>'About',
+                'uri'=>'#about',
+                'content'=>'This is contact page',
+                'parent_id'=>null,
+                'lft'=>3,
+                'rgt'=>4,
+                'depth'=>0
             ],
             [
-                'title'=>'Characters',
-                'uri'=>'characters',
+                'title'=>'Contact',
+                'uri'=>'#contact',
                 'content'=>'This is about page',
                 'parent_id'=>null,
-                'lft'=>9,
-                'rgt'=>10,
+                'lft'=>5,
+                'rgt'=>6,
                 'depth'=>0
-            ]
-            ]
+            ],
+            [
+                'title'=>'Offers',
+                'uri'=>'#offers',
+                'content'=>'This is about page',
+                'parent_id'=>null,
+                'lft'=>7,
+                'rgt'=>8,
+                'depth'=>0
+            ]]
             );
     }
 }

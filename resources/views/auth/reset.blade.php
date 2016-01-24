@@ -1,6 +1,6 @@
 @extends('layouts.auth')
-@section('title','Нова парола')
-@section('heading','Запишете вашата нова парола')
+@section('title','New Password')
+@section('heading','Please enter new password')
 
 @section('content')
     {!! Form::open() !!}
@@ -17,7 +17,7 @@
         {!! Form::label('password_confirmation') !!}
         {!! Form::password('password_confirmation',['class'=>'form-control']) !!}
     </div>
-    {!! Form::submit('Поднови парола',['class'=>'btn btn-primary']) !!}
+    {!! Form::submit('Reset password',['class'=>'btn btn-primary']) !!}
 
     {!! Form::close() !!}
 @endsection

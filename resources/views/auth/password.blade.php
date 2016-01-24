@@ -1,7 +1,7 @@
 
 @extends('layouts.auth')
-@section('title','Забравена парола')
-@section('heading','Моля сложете вашия емайл за да подновим паролата');
+@section('title','Forgot password')
+@section('heading','Please enter your email to reset the password');
 
 @section('content')
     {!! Form::open() !!}
@@ -10,7 +10,7 @@
         {!! Form::text('email',null,['class'=>'form-control']) !!}
     </div>
 
-    {!! Form::submit('Изпрати Линк',['class'=>'btn btn-primary']) !!}
+    {!! Form::submit('Send link',['class'=>'btn btn-primary']) !!}
 
     {!! Form::close() !!}
 @endsection

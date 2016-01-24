@@ -1,7 +1,4 @@
 @extends('layouts.frontend')
-@section('title','MMA')
+@section('title','Anga')
 
-@section('content')
-    {{ Widget::run('recentNews') }}
-@endsection
 

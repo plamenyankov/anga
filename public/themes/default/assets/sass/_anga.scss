@@ -1,7 +1,9 @@
 
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Helvetica,Arial,sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.75;
 }
 
 .text-muted {
@@ -9,14 +11,14 @@ body {
 }
 
 .text-primary {
-  color: #e74c46;
+  color: #00C78C;
 }
 
 p {
-  font-size: 14px;
-  line-height: 1.75;
+  font-size: 16px;
+  line-height: 2;
   &.large {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -25,14 +27,14 @@ a {
   &:hover, &:focus, &:active, &.active {
     outline: 0;
   }
-  color: #e74c46;
+  color: #00C78C;
   &:hover, &:focus, &:active, &.active {
-    color: #F4504A;
+    color: #33A1C9;
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -51,22 +53,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   color: #fff;
-  background-color: #e74c46;
-  border-color: #e74c46;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #00C78C;
+  border-color: #00C78C;
+  font-family: Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   &:hover, &:focus, &:active, &.active {
     color: #fff;
-    background-color: #F4504A;
-    border-color: #e74c46;
+    background-color: #33A1C9;
+    border-color: #00C78C;
   }
 }
 
 .open .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #F4504A;
-  border-color: #e74c46;
+  background-color: #33A1C9;
+  border-color: #00C78C;
 }
 
 .btn-primary {
@@ -81,74 +83,74 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   &.disabled, &[disabled] {
-    background-color: #e74c46;
-    border-color: #e74c46;
+    background-color: #00C78C;
+    border-color: #00C78C;
   }
 }
 
 fieldset[disabled] .btn-primary {
-  background-color: #e74c46;
-  border-color: #e74c46;
+  background-color: #00C78C;
+  border-color: #00C78C;
 }
 
 .btn-primary {
   &.disabled:hover, &[disabled]:hover {
-    background-color: #e74c46;
-    border-color: #e74c46;
+    background-color: #00C78C;
+    border-color: #00C78C;
   }
 }
 
 fieldset[disabled] .btn-primary:hover {
-  background-color: #e74c46;
-  border-color: #e74c46;
+  background-color: #00C78C;
+  border-color: #00C78C;
 }
 
 .btn-primary {
   &.disabled:focus, &[disabled]:focus {
-    background-color: #e74c46;
-    border-color: #e74c46;
+    background-color: #00C78C;
+    border-color: #00C78C;
   }
 }
 
 fieldset[disabled] .btn-primary:focus {
-  background-color: #e74c46;
-  border-color: #e74c46;
+  background-color: #00C78C;
+  border-color: #00C78C;
 }
 
 .btn-primary {
   &.disabled:active, &[disabled]:active {
-    background-color: #e74c46;
-    border-color: #e74c46;
+    background-color: #00C78C;
+    border-color: #00C78C;
   }
 }
 
 fieldset[disabled] .btn-primary:active {
-  background-color: #e74c46;
-  border-color: #e74c46;
+  background-color: #00C78C;
+  border-color: #00C78C;
 }
 
 .btn-primary {
   &.disabled.active, &[disabled].active {
-    background-color: #e74c46;
-    border-color: #e74c46;
+    background-color: #00C78C;
+    border-color: #00C78C;
   }
 }
 
 fieldset[disabled] .btn-primary.active {
-  background-color: #e74c46;
-  border-color: #e74c46;
+  background-color: #00C78C;
+  border-color: #00C78C;
 }
 
 .btn-primary .badge {
-  color: #e74c46;
+  color: #00C78C;
   background-color: #fff;
 }
 
 .btn-lg {
   color: #fff;
-  background-color: #e74c46;
-  border-color: #e74c46;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #00C78C ;
+  border-color: #00C78C ;
+  font-family: Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 3px;
@@ -156,15 +158,15 @@ fieldset[disabled] .btn-primary.active {
   padding: 10px 20px;
   &:hover, &:focus, &:active, &.active {
     color: #fff;
-    background-color: #F4504A;
-    border-color: #e74c46;
+    background-color: #33A1C9;
+    border-color: #00C78C ;
   }
 }
 
 .open .dropdown-toggle.btn-lg {
   color: #fff;
-  background-color: #F4504A;
-  border-color: #e74c46;
+  background-color: #33A1C9;
+  border-color: #00C78C ;
 }
 
 .btn-lg {
@@ -179,66 +181,66 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-lg {
   &.disabled, &[disabled] {
-    background-color: #e74c46;
-    border-color: #e74c46;
+    background-color: #00C78C ;
+    border-color: #00C78C ;
   }
 }
 
 fieldset[disabled] .btn-lg {
-  background-color: #e74c46;
-  border-color: #e74c46;
+  background-color: #00C78C ;
+  border-color: #00C78C ;
 }
 
 .btn-lg {
   &.disabled:hover, &[disabled]:hover {
-    background-color: #e74c46;
-    border-color: #e74c46;
+    background-color: #00C78C ;
+    border-color: #00C78C ;
   }
 }
 
 fieldset[disabled] .btn-lg:hover {
-  background-color: #e74c46;
-  border-color: #e74c46;
+  background-color: #00C78C ;
+  border-color: #00C78C ;
 }
 
 .btn-lg {
   &.disabled:focus, &[disabled]:focus {
-    background-color: #e74c46;
-    border-color: #e74c46;
+    background-color: #00C78C ;
+    border-color: #00C78C ;
   }
 }
 
 fieldset[disabled] .btn-lg:focus {
-  background-color: #e74c46;
-  border-color: #e74c46;
+  background-color: #00C78C ;
+  border-color: #00C78C ;
 }
 
 .btn-lg {
   &.disabled:active, &[disabled]:active {
-    background-color: #e74c46;
-    border-color: #e74c46;
+    background-color: #00C78C ;
+    border-color: #00C78C ;
   }
 }
 
 fieldset[disabled] .btn-lg:active {
-  background-color: #e74c46;
-  border-color: #e74c46;
+  background-color: #00C78C ;
+  border-color: #00C78C ;
 }
 
 .btn-lg {
   &.disabled.active, &[disabled].active {
-    background-color: #e74c46;
-    border-color: #e74c46;
+    background-color: #00C78C ;
+    border-color: #00C78C ;
   }
 }
 
 fieldset[disabled] .btn-lg.active {
-  background-color: #e74c46;
-  border-color: #e74c46;
+  background-color: #00C78C ;
+  border-color: #00C78C ;
 }
 
 .btn-lg .badge {
-  color: #e74c46;
+  color: #00C78C ;
   background-color: #fff;
 }
 
@@ -246,43 +248,43 @@ fieldset[disabled] .btn-lg.active {
   background-color: #222;
   border-color: transparent;
   .navbar-brand {
-    color: #e74c46;
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #00C78C ;
+    font-family: cursive;
     &:hover, &:focus, &:active, &.active {
-      color: #F4504A;
+      color: #33A1C9;
     }
   }
   .navbar-collapse {
     border-color: rgba(255, 255, 255, 0.02);
   }
   .navbar-toggle {
-    background-color: #e74c46;
-    border-color: #e74c46;
+    background-color: #00C78C ;
+    border-color: #00C78C ;
     .icon-bar {
       background-color: #fff;
     }
     &:hover, &:focus {
-      background-color: #e74c46;
+      background-color: #00C78C;//#33A1C9;
     }
   }
   .nav li a {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #e74c46;
+    color: #00C78C ;
     &:hover, &:focus {
-      color: #e74c46;
+      color: #00C78C ;
       outline: 0;
     }
   }
   .navbar-nav > .active > a {
     border-radius: 0;
     color: #fff;
-    background-color: #e74c46;
+    background-color: #00C78C;//#33A1C9;
     &:hover, &:focus {
       color: #fff;
-      background-color: #F4504A;
+      background-color: #00C78C;//#33A1C9;
     }
   }
 }
@@ -294,7 +296,7 @@ fieldset[disabled] .btn-lg.active {
     -webkit-transition: padding .3s;
     -moz-transition: padding .3s;
     transition: padding .3s;
-    border-bottom: 1px solid #F4504A;
+    border-bottom: 1px solid #00C78C;
     .navbar-brand {
       font-size: 2em;
       -webkit-transition: all .3s;
@@ -303,9 +305,11 @@ fieldset[disabled] .btn-lg.active {
     }
     .navbar-nav > .active > a {
       border-radius: 3px;
+      color: #fff;
+      background-color: #00C78C;//#33A1C9;
     }
     &.navbar-shrink {
-      background-color: #222;
+      //background-color: #222;
       padding: 15px 0;
       .navbar-brand {
         font-size: 1.5em;
@@ -324,19 +328,19 @@ header {
   background-size: cover;
   -o-background-size: cover;
   text-align: center;
-  color: #888;
+  color: #222;
   .intro-text {
     padding-top: 80px;
     padding-bottom: 50px;
     .intro-lead-in {
-      font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-family: Helvetica,Arial,sans-serif;
       font-style: italic;
       font-size: 32px;
       line-height: 32px;
       margin-bottom: 25px;
     }
     .intro-heading {
-      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-family: Helvetica,Arial,sans-serif;
       font-weight: 700;
       font-size: 22px;
       line-height: 22px;
@@ -350,14 +354,14 @@ header {
     padding-top: 130px;
     padding-bottom: 200px;
     .intro-lead-in {
-      font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-family: Helvetica,Arial,sans-serif;
       font-style: italic;
       font-size: 30px;
       line-height: 40px;
       margin-bottom: 25px;
     }
     .intro-heading {
-      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-family: Helvetica,Arial,sans-serif;
       font-weight: 700;
       font-size: 22px;
       line-height: 22px;
@@ -375,11 +379,11 @@ section {
   }
   h3.section-subheading {
     font-size: 16px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
     text-transform: none;
     font-style: italic;
     font-weight: 400;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
 }
 
@@ -444,7 +448,7 @@ section {
         margin: 0;
       }
       p {
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: Helvetica,Arial,sans-serif;
         font-style: italic;
         font-size: 16px;
         margin: 0;
@@ -515,7 +519,7 @@ section {
       height: 80px;
       position: absolute;
       z-index: 100;
-      background-color: #e74c46;
+      background-color: #00C78C ;
       color: #fff;
       border-radius: 100%;
       border: 7px solid #f1f1f1;
@@ -659,7 +663,8 @@ aside.clients img {
 }
 
 section#contact {
-  background-color: #222;
+  background-color: #275261;
+  color:#ffffff;
   background-image: url(../img/map-image.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -679,17 +684,17 @@ section#contact {
     }
   }
   .form-control:focus {
-    border-color: #e74c46;
+    border-color: #00C78C ;
     box-shadow: none;
   }
   ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #bbb;
   }
   .text-danger {
-    color: #e74c3c;
+    color: #00C78C;
   }
 }
 
@@ -698,14 +703,14 @@ footer {
   text-align: center;
   span.copyright {
     line-height: 40px;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     text-transform: none;
   }
   ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     text-transform: none;
   }
@@ -727,7 +732,7 @@ ul.social-buttons {
     -moz-transition: all .3s;
     transition: all .3s;
     &:hover, &:focus, &:active {
-      background-color: #e74c46;
+      background-color: #00C78C ;
     }
   }
 }
@@ -756,7 +761,7 @@ ul.social-buttons {
       margin-bottom: 30px;
       &.item-intro {
         margin: 20px 0 30px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: Helvetica,Arial,sans-serif;
         font-style: italic;
         font-size: 16px;
       }
@@ -808,7 +813,7 @@ ul.social-buttons {
 
 ::-moz-selection, ::selection {
   text-shadow: none;
-  background: #e74c46;
+  background: #00C78C ;
 }
 
 img {
@@ -818,6 +823,6 @@ img {
 }
 
 body {
-  webkit-tap-highlight-color: #e74c46;
+  webkit-tap-highlight-color: #00C78C ;
 }
                         

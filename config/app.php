@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'locale' => 'bg',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -113,6 +113,8 @@ return [
         Baum\Providers\BaumServiceProvider::class,
         Lewis\Presenter\PresenterServiceProvider::class,
         Illuminate\Html\HtmlServiceProvider::class,
+        Skovmand\Mailchimp\MailchimpServiceProvider::class,
+        NZTim\Mailchimp\MailchimpServiceProvider::class,
         /*
          * Laravel Framework Service Providers...
          */
@@ -198,6 +200,7 @@ return [
         'Form'      => Illuminate\Html\FormFacade::class,
         'Widget'       => Arrilot\Widgets\Facade::class,
         'AsyncWidget'  => Arrilot\Widgets\AsyncFacade::class,
+        'Mailchimp' => NZTim\Mailchimp\MailchimpFacade::class,
     ],
 
 ];

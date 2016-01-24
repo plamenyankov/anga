@@ -2,7 +2,7 @@
 <html lang="bg">
 <head>
     <meta charset='UTF-8'>
-    <title>@yield('heading') &mdash; MMA</title>
+    <title>@yield('heading') &mdash; Anga Group</title>
     <link rel="stylesheet" href="{{theme("css/backend.css")}}"/>
 
 </head>

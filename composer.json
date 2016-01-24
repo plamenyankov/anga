@@ -8,10 +8,13 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
         "illuminate/html": "~5.0",
+        "mailchimp/mailchimp": "2.0.6",
+        "skovmand/mailchimp-laravel": "1.*",
         "lewis/presenter": "^1.0",
         "baum/baum": "^1.1",
         "league/commonmark": "^0.12.0",
-        "arrilot/laravel-widgets": "^3.2"
+        "arrilot/laravel-widgets": "^3.2",
+        "nztim/mailchimp": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

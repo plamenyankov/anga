@@ -1,5 +1,5 @@
 @extends('layouts.backend')
-@section('title','Потребители')
+@section('title','Users')
 
 
 @section('content')
