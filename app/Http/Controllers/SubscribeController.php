@@ -12,7 +12,7 @@ use NZTim\Mailchimp\Mailchimp;
 class SubscribeController extends Controller
 {
     protected $mailchimp;
-    protected $listId = 'd471dd7c52';
+    protected $listId = '540165c1b4';
     protected $subscribe;
     public function __construct(Mailchimp $mailchimp, Subscriber $subscriber)
     {
@@ -26,9 +26,9 @@ class SubscribeController extends Controller
         $message1 = $request->get('message');
         $subscribe = $request->get('subscribe');
         if($subscribe == 'true') {
-            $this->mailchimp->subscribe('d471dd7c52', $email, [], false);
+            $this->mailchimp->subscribe('540165c1b4', $email, [], false);
         }
-        $to = "p.s.yankov@abv.bg";
+        $to = "contact@angagroup.bg";
 
         Mail::send('emails.subscribe', ['msg'=>$message1,'email'=>$email,'phone'=>$phone,'name'=>$name], function ($message)use ($email,$to,$name) {
             $message->from($email,'Anga Group website');
@@ -44,7 +44,7 @@ class SubscribeController extends Controller
     }
     public function mailchimp(Request $request){
 
-            $this->mailchimp->subscribe('d471dd7c52', $request->email, [], false);
+            $this->mailchimp->subscribe('540165c1b4', $request->email, [], false);
             $this->subscribe->create($request->only('email', 'subscribed_at'))->save();
         return 1;
     }
