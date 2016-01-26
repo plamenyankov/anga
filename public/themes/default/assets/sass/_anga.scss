@@ -54,14 +54,14 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
   color: #fff;
   background-color: #275261;
-  border-color: #275261;
+  border-color: #33A1C9;
   font-family: Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   &:hover, &:focus, &:active, &.active {
     color: #fff;
     background-color: #33A1C9;
-    border-color: #275261;
+    border-color: #33A1C9;
   }
 }
 
@@ -149,7 +149,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-lg {
   color: #fff;
   background-color: #275261 ;
-  border-color: #275261 ;
+  border-color: #33A1C9 ;
   font-family: Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -159,14 +159,14 @@ fieldset[disabled] .btn-primary.active {
   &:hover, &:focus, &:active, &.active {
     color: #fff;
     background-color: #33A1C9;
-    border-color: #275261 ;
+    border-color: #33A1C9 ;
   }
 }
 
 .open .dropdown-toggle.btn-lg {
   color: #fff;
   background-color: #33A1C9;
-  border-color: #275261 ;
+  border-color: #33A1C9 ;
 }
 
 .btn-lg {
@@ -182,61 +182,61 @@ fieldset[disabled] .btn-primary.active {
 .btn-lg {
   &.disabled, &[disabled] {
     background-color: #275261 ;
-    border-color: #275261 ;
+    border-color: #33A1C9;
   }
 }
 
 fieldset[disabled] .btn-lg {
   background-color: #275261 ;
-  border-color: #275261 ;
+  border-color: #33A1C9;
 }
 
 .btn-lg {
   &.disabled:hover, &[disabled]:hover {
     background-color: #275261 ;
-    border-color: #275261 ;
+    border-color: #33A1C9;
   }
 }
 
 fieldset[disabled] .btn-lg:hover {
   background-color: #275261 ;
-  border-color: #275261 ;
+  border-color: #33A1C9;
 }
 
 .btn-lg {
   &.disabled:focus, &[disabled]:focus {
     background-color: #275261 ;
-    border-color: #275261 ;
+    border-color: #33A1C9;
   }
 }
 
 fieldset[disabled] .btn-lg:focus {
   background-color: #275261 ;
-  border-color: #275261 ;
+  border-color: #33A1C9;
 }
 
 .btn-lg {
   &.disabled:active, &[disabled]:active {
     background-color: #275261 ;
-    border-color: #275261 ;
+    border-color: #33A1C9;
   }
 }
 
 fieldset[disabled] .btn-lg:active {
   background-color: #275261 ;
-  border-color: #275261 ;
+  border-color: #33A1C9;
 }
 
 .btn-lg {
   &.disabled.active, &[disabled].active {
     background-color: #275261 ;
-    border-color: #275261 ;
+    border-color: #33A1C9;
   }
 }
 
 fieldset[disabled] .btn-lg.active {
   background-color: #275261 ;
-  border-color: #275261 ;
+  border-color: #33A1C9;
 }
 
 .btn-lg .badge {
