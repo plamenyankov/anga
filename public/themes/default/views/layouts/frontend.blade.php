@@ -258,7 +258,7 @@
                                                 name="subscribe"
                                                 id="subscribe2"
                                                 type="checkbox"/>
-                                        Subscribe for news letters</label>
+                                        Subscribe for newsletters</label>
 
                                 </div>
                             </div>
