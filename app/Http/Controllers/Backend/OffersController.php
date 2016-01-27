@@ -145,7 +145,7 @@ class OffersController extends Controller
     public function destroy($id)
     {
         $offer = $this->offer->findOrFail($id);
-        if($offer->filename){
+        if($offer->filename && file_exists(public_path('offers/' . $offer->filename))){
             unlink(public_path('offers/' . $offer->filename));
         }
         $offer->delete();
