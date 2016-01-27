@@ -30,7 +30,10 @@ class OffersController extends Controller
 
         return view('backend.offers.index', compact('offers'));
     }
-
+    public function confirm($id){
+        $offer = $this->offer->findOrFail($id);
+        return view('backend.offers.confirm',compact('offer'));
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -141,6 +144,11 @@ class OffersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $offer = $this->offer->findOrFail($id);
+        if($offer->filename){
+            unlink(public_path('offers/' . $offer->filename));
+        }
+        $offer->delete();
+        return redirect(route('backend.offers.index'))->with('status','The offer has been deleted.');
     }
 }

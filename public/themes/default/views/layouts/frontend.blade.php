@@ -114,7 +114,9 @@
                 @if(count($offers))
                     <ul class="list-group">
                         @foreach($offers as $offer)
+                            @if($offer->active)
                             <li class="list-group-item"><a href="#offers">{{$offer->title}}</a></li>
+                            @endif
                         @endforeach
                     </ul>
                 @else
@@ -286,6 +288,7 @@
                 @if(count($offers))
                     <ul class="list-group">
                         @foreach($offers as $offer)
+                            @if($offer->active)
                             <li class="list-group-item">
                                 <div class="car-title">{{$offer->title}}</div>
                                 <div style="min-height: 30px;">
@@ -297,6 +300,7 @@
                                     @endif
                                 </div>
                             </li>
+                            @endif
                         @endforeach
                     </ul>
                 @else
