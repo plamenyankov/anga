@@ -243,9 +243,16 @@ fieldset[disabled] .btn-lg.active {
   color: #275261 ;
   background-color: #fff;
 }
-
-.navbar-default {
-  background-color: #222;
+.navbar-brand {
+  @media (max-width: 768px) {
+    float: left;
+    padding: 0px 0px 0px 20px;
+    line-height: 50px;
+    height: 0px;
+  }
+}
+  .navbar-default {
+  background-color: #275261;
   border-color: transparent;
   font-family: Helvetica,Arial,sans-serif;
   .navbar-brand {
@@ -299,6 +306,7 @@ fieldset[disabled] .btn-lg.active {
     border-bottom: 1px solid #ffffff;
     .navbar-brand {
       font-size: 2em;
+
       -webkit-transition: all .3s;
       -moz-transition: all .3s;
       transition: all .3s;
