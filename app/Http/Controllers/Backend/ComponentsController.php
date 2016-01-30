@@ -3,23 +3,32 @@
 namespace MMA\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
-
-use MMA\Http\Requests;
-use MMA\Http\Controllers\Controller;
 use MMA\Component;
+use MMA\Http\Controllers\Controller;
+use MMA\Http\Requests;
+
 class ComponentsController extends Controller
 {
 
     public function header(Component $component)
     {
-        $component =  $component->findOrFail(2);
+        $component = $component->findOrFail(2);
         return view('backend.component.index', compact('component'));
     }
 
 
     public function about(Component $component)
     {
-        $component =  $component->findOrFail(1);
+        $component = $component->findOrFail(1);
+
+        return view('backend.component.index', compact('component'));
+
+
+    }
+
+    public function terms(Component $component)
+    {
+        $component = $component->findOrFail(3);
 
         return view('backend.component.index', compact('component'));
 
@@ -29,7 +38,7 @@ class ComponentsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -40,7 +49,7 @@ class ComponentsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -51,7 +60,7 @@ class ComponentsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -59,17 +68,17 @@ class ComponentsController extends Controller
         //
     }
 
-    public function update(Request $request,Component $component)
+    public function update(Request $request, Component $component)
     {
         $com = $component->findOrFail($request->id);
-        $com->fill($request->only('title','body'))->save();
-        return redirect()->back()->with('status', strtoupper($com->type).' has been updated.');
+        $com->fill($request->only('title', 'body'))->save();
+        return redirect()->back()->with('status', strtoupper($com->type) . ' has been updated.');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

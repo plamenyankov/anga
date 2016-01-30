@@ -30,6 +30,12 @@ class ComponentsTableSeeder extends Seeder
                     blanditiis commodi cumque deserunt dignissimos doloribus eos ex excepturi iure magnam maiores nemo
                     nesciunt nostrum perferendis perspiciatis',
                 'type'=>'header'
-            ]]);
+            ],
+            [
+                'title'=>'General Terms',
+                'body'=>'Some general terms',
+                'type'=>'terms'
+            ]
+        ]);
     }
 }

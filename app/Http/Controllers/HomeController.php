@@ -31,9 +31,10 @@ class HomeController extends Controller
 
         $header = $component->where('type','header')->first();
         $about = $component->where('type','about')->first();
+        $terms = $component->where('type','terms')->first();
         $offers = $this->offers->orderBy('updated_at','desc')->get();
 
-        return view('welcome',compact('header','about','offers'));
+        return view('welcome',compact('header','about','terms','offers'));
     }
 
     /**

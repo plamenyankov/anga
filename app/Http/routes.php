@@ -12,6 +12,7 @@ Route::controller('auth', 'Auth\AuthController', [
 Route::put('backend/components/update',['as' => 'backend.components.update', 'uses' =>'Backend\ComponentsController@update']);
 Route::get('backend/components/header',['as' => 'backend.components.header', 'uses' =>'Backend\ComponentsController@header']);
 Route::get('backend/components/about',['as' => 'backend.components.about', 'uses' =>'Backend\ComponentsController@about']);
+Route::get('backend/components/terms',['as' => 'backend.components.terms', 'uses' =>'Backend\ComponentsController@terms']);
 Route::get('backend/users/{user}/confirm',['as'=>'backend.users.confirm','uses'=>'Backend\UsersController@confirm']);
 Route::resource('backend/users', 'Backend\UsersController',['except'=>'show']);
 Route::get('backend/pages/{pages}/confirm',['as'=>'backend.pages.confirm','uses'=>'Backend\PagesController@confirm']);

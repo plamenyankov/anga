@@ -19,6 +19,7 @@
             <li><a href="{{route('backend.components.header')}}">Header</a></li>
             <li><a href="{{route('backend.components.about')}}">About</a></li>
             <li><a href="{{route('backend.offers.index')}}">Offers</a></li>
+            <li><a href="{{route('backend.components.terms')}}">Terms</a></li>
 
         </ul>
         <ul class="nav navbar-nav navbar-right">

@@ -367,17 +367,10 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">General Terms</h4>
+                <h4 class="modal-title" id="myModalLabel">{{$terms->title}}</h4>
             </div>
             <div class="modal-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus delectus dolor ea esse eveniet harum
-                inventore modi molestias natus necessitatibus nihil nobis non perferendis reprehenderit repudiandae
-                sequi, tempora voluptates. Cupiditate exercitationem facere illo ipsam iure molestias nemo nihil quis
-                repellendus voluptates! Ab alias architecto aspernatur beatae deserunt dicta eligendi enim
-                exercitationem in incidunt, ipsum laboriosam maxime, natus placeat provident quo quod sed vitae
-                voluptatem voluptatibus! Accusamus cumque laboriosam odit sint tempore velit voluptatum. Accusamus ad
-                aliquam at consequatur cupiditate distinctio, dolor dolorum eos excepturi explicabo fugiat iste mollitia
-                necessitatibus nesciunt non quia quibusdam quisquam, quo repellendus, sed sint sit voluptatum.
+                {{$terms->body}}
             </div>
 
         </div>
